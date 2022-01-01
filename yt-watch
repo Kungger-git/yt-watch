@@ -320,7 +320,7 @@ helpScreen() {
   ${c_red}-q, --queries${c_reset}                 ${c_blue}Lists out all of your search history.${c_reset}
   ${c_red}-qc, --query-copy${c_reset}             ${c_blue}Lists out search history, select & it copies it.${c_reset}
   ${c_red}-v, --videos${c_reset}                  ${c_blue}Lists out all of your watch history.${c_reset}
-  ${c_red}-vc, --video-play${c_reset}             ${c_blue}Lists out watch history, select & it plays it.${c_reset}
+  ${c_red}-vp, --video-play${c_reset}             ${c_blue}Lists out watch history, select & it plays it.${c_reset}
 
   ${c_green}EXAMPLE:${c_reset}
   ${c_red}-sl 25 --loop --headless${c_reset}      ${c_blue}Lists out 25 results of your query. Selected Video will loop but not have video playback.${c_reset}
@@ -402,7 +402,7 @@ elif [[ "$1" == "-v" || "$1" == "--videos" ]]; then
     listWatchHistory
 
 # Lists out your watch history, select & it plays it for you.
-elif [[ "$1" == "-vc" || "$1" == "--video-play" ]]; then
+elif [[ "$1" == "-vp" || "$1" == "--video-play" ]]; then
     listWatchHistory " "
 
 # Clear search history :)
